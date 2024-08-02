@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'SpotifyMixUI';
+    src: url('path/to/SpotifyMixUI.woff2') format('woff2'),
+         url('path/to/SpotifyMixUI.woff') format('woff'),
+         url('path/to/SpotifyMixUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #000;
+}
+.container{
+    display: flex;
+    gap: 8px;
+}
+.left{
+    display: flex;
+    gap: 8px;
+    width: 21vw;
+    flex-direction: column;
+}
+.right{
+    background-color: #121212;
+    width: 79vw;
+    border-radius: 7px;
+}
+.left-first{
+    display: flex;
+    background-color: #121212;
+    border-radius: 7px;
+    width: 21vw;
+    flex-direction: column;
+    gap: 10px ;
+}
+.left-first :first-child{
+    margin: 10px 0px 7px 12px;
+    width: 88px;
+    cursor: pointer;
+}
+.left-first :nth-child(2){
+    margin: -17px 0px 2px 12px;
+    color: white;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 35px;
+    cursor: pointer;
+}
+.left-first :nth-child(3){
+    margin: -10px 0px 14px 12px;
+    color: white;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    width: 35px;
+}
+.left-second{
+    display: flex;
+    background-color: #121212;
+    border-radius: 7px;
+    width: 21vw;
+    flex-direction: column;
+    gap: 10px ;
+}
+.left-second-first{
+    display: flex;
+    color: #c1c1c1;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    align-content: center;
+    justify-content: space-around;
+    margin: 15px 14px 18px -6px;
+}
+.library-image{
+    margin-right: 65px;
+}
+.left-second-card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex-wrap: wrap;
+    
+}
+.left-second-card-one{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #1f1f1f;
+    gap: 10px;
+    margin: 10px 8px 10px 8px;
+    padding: 20px 0 20px 20px;
+    border-radius: 7px;
+}
+.left-second-card-one :first-child{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+.left-second-card-one :nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    margin-bottom: 10px;
+}
+.left-second-card-one :nth-child(3){
+    font-size: 14px;
+    font-weight: 700;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.left-second-card-second :nth-child(3){
+    font-size: 14px;
+    font-weight: 700;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
