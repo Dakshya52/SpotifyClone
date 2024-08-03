@@ -86,8 +86,6 @@ body{
     display: flex;
     flex-direction: column;
     color: white;
-    flex-wrap: wrap;
-    
 }
 .left-second-card-one{
     display: flex;
@@ -119,6 +117,7 @@ body{
     border-radius: 20px;
     padding: 5px;
     cursor: pointer;
+    border: none;
 }
 .left-second-card-second :nth-child(3){
     font-size: 14px;
@@ -129,4 +128,28 @@ body{
     border-radius: 20px;
     padding: 5px;
     cursor: pointer;
+    border: none;
+}
+.left-footer {
+    text-decoration: none;
+    color: white;  
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 48px 116px 100px;
+    row-gap: 9px;    
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.footer-grid div{
+    color: rgb(179, 179, 179);
+    font-weight: 400;
+    font-size: 11px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer{
+    height: 66px;
+    
 }
