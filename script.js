@@ -92,7 +92,7 @@ const playMusic = (track)=>{
     })
 
     document.querySelector(".seekbar").addEventListener("click",e=>{
-        document.querySelector(".circle").style.left = (e.offsetX/e.target.getBoundingClientRect().width) * 100 + "%"
+        document.querySelector(".circle").style.left =  (e.offsetX/(e.target.getBoundingClientRect().width)) * 100 + "%"
         currentSong.currentTime = (currentSong.duration*(e.offsetX/e.target.getBoundingClientRect().width) * 100)/ 100
         
     })
