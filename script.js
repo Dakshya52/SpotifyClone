@@ -96,6 +96,17 @@ const playMusic = (track)=>{
         currentSong.currentTime = (currentSong.duration*(e.offsetX/e.target.getBoundingClientRect().width) * 100)/ 100
         
     })
+
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+        document.querySelector(".left").style.left = "8px"
+        document.querySelector(".left").style.bottom = "-1px"
+        document.querySelector(".left-first").style.width = "300px"
+        document.querySelector(".left-second").style.width = "300px"
+    })
+    document.querySelector(".close").addEventListener("click",()=>{
+        document.querySelector(".left").style.left = "-100%"
+    })
+
 }
 
 main()
