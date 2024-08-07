@@ -396,9 +396,13 @@ html {
     margin-right: 20px;
 }
 
+.right-body{
+    width: 100%;
+}
 
 .right-body-card{
     margin-top: 80px;
+    width: 100%;
 }
 
 .right-body-card-text{
@@ -406,7 +410,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px 20px 0 20px;
+    margin: 50px 20px 0 10px;
     cursor: pointer;
 }
 
@@ -428,6 +432,8 @@ html {
     display: flex;
     flex-direction: row;
     margin-left: 10px;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .right-body-card-sub2{
@@ -622,6 +628,9 @@ html {
 }
 
 @media  (max-width:850px){
+    .footer{
+        height: 40%;
+    }
     .footer-content{
         flex-direction: column;
     }
@@ -634,7 +643,7 @@ html {
     .left{
         position: absolute;
         left: -100%;
-        transition: all 0.5sec;
+        transition: all 3sec ease-in-out;
         z-index: 6;
         width: 300px;
         background-color: #000000;
@@ -665,8 +674,9 @@ html {
     .close{
         display: block;
     }
-    .right-body-card-text{
-        overflow: auto;
+    
+    .right-body-card-text{    
+    gap: 850px;
     }
     .right-body-card{
         overflow: auto;
