@@ -19,7 +19,7 @@ function convertSecondsToMinutes(seconds) {
 }
 
 async function getSongs() {
-    let a =  await fetch("http://127.0.0.1:3000/Assets/songs/")
+    let a =  await fetch("http://127.0.0.1:3000/Assets/songs")
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -69,8 +69,9 @@ const playMusic = (track)=>{
     //    console.log(audio.duration,audio.currentSrc, audio.currentTime)
     // })
     Array.from(document.querySelector(".Playlist").getElementsByTagName("li")).forEach(e=>{
+        console.log(e);
         
-        e.addEventListener("click",element=>{
+        e.addEventListener("click",()=>{
             playMusic(e.getElementsByTagName("div")[0].innerHTML.trim())
             console.log(e.getElementsByTagName("div")[0].innerHTML);
         })
@@ -109,10 +110,7 @@ const playMusic = (track)=>{
         document.querySelector(".left").style.left = "-100%"
     })
     
-    for (let index = 0; index < songs.length; index++) {
-        const element = songs[index];
-        
-    }
+    
 
     previous.addEventListener("click",()=>{
         let index =  songs.indexOf(currentSong.src.split("/").slice(-1)[0])
